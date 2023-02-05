@@ -1,0 +1,20 @@
+Cálculo de factura
+Al pulsar el botón de calcular, el usuario deberá recibir el desglose de la factura a través de 3 campos: , y .subtotalimpuestostotal
+
+Para calcular la factura, recorre tu lista de productos con un bucle y haz los cálculos pertinentes para cada producto:
+
+El precio total de un producto será el .precio unitario * unidades
+El IVA a pagar por un producto será .precio total producto * IVA / 100
+Resumen de pasos
+Prepara un HTML con la cabecera, el botón de calcular, y los campos de la factura , y . Sin embargo, no hagas ningún elemento para los productos, eso lo debes hacer desde JS. Si necesitaras crear algún , identifícalo con algún id que te servirá como punto de entrada para "enganchar" tu lista de productos.subtotalimpuestostotal<div>
+Implementa un algoritmo que genere desde Javascript los elementos HTML necesarios para mostrar una lista de productos con su descripción, precio unitario y un input de unidades para cada uno.
+Prepara un algoritmo que calcule la factura cuando pulsemos el botón calcular y muestre el resultado en los campos , y .subtotalimpuestostotal
+Extra
+Intenta hacer que el botón Calcular se habilite o deshabilite en función de si el usuario ha elegido al menos 1 unidad de algún producto o no. Es decir:
+
+Si las unidades de todos los productos están a 0, el botón calcular se deshabilita.
+Si existe al menos 1 producto con 1 unidad seleccionada, el botón calcular se deberá habilitar.
+Para habilitar o deshabilitar un elemento HTML puedes hacer lo siguiente:
+
+document.getElementById("button-calculate").disabled = true; // Disabled
+document.getElementById("button-calculate").disabled = false; // Enabled
